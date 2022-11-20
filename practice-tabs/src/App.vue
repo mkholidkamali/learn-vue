@@ -1,23 +1,21 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
+  import { defineComponent } from "vue";
+  import Tab from "./components/tabs/tab.vue"
+  import Tabs from "./components/tabs/tabs.vue"
 </script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-    </div>
-  </header>
-
-  <main>
-    <TheWelcome />
-  </main>
+  <div>
+    <Tabs>
+      <tab title="Tab 1">Hello From Tab 1</tab>
+      <tab title="Tab 2">Hello From Tab 2</tab>
+      <tab title="Tab 3">Hello From Tab 3</tab>
+      <tab title="Tab 4">Hello From Tab 4</tab>
+    </Tabs>
+  </div>
 </template>
 
-<style scoped>
+<!-- <style scoped>
 header {
   line-height: 1.5;
 }
@@ -44,4 +42,4 @@ header {
     flex-wrap: wrap;
   }
 }
-</style>
+</style> -->
